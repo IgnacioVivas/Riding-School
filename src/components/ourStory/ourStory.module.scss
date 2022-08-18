@@ -1,0 +1,71 @@
+$font-title: 'Playfair Display', serif;
+$color-text: #6c6969;
+$color-rojo: #cc3f31;
+$color-gris-sec: #c1c1c1;
+
+.rowStory {
+    padding-top: 100px;
+    .containerStory {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        h2 {
+            font-size: 44px;
+            font-family: $font-title;
+            text-transform: uppercase;  
+            line-height: 54px;
+            font-weight: 400;
+            padding-bottom: 20px;
+        }
+        p {
+            color: $color-text;
+            font-size: 18px;
+            line-height: 33px;
+            font-weight: 400;
+            letter-spacing: 0px;
+            text-transform: none;
+            margin-bottom: 30px;
+            text-align: left;
+        }
+    }
+
+    .containerStoryImg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 968px){
+    .rowStory {
+        padding: 0 50px 0 50px;
+        .containerStoryImg {
+            margin-top: 45px;
+        }
+    }
+}
+
+@media screen and (max-width: 426px){
+    .rowStory {
+        .containerStory {
+            justify-content: center;
+            align-items: center;
+            p {
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 321px){
+    .rowStory {
+        padding: 0 10px 0 10px;
+        .containerStoryImg {
+            margin-top: 45px;
+        }
+    }
+}

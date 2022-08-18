@@ -1,0 +1,153 @@
+$font-title: 'Playfair Display', serif;
+$color-text: #6c6969;
+$color-rojo: #cc3f31;
+$color-gris-sec: #c1c1c1;
+
+.footer {
+    width: 100%;
+    background-color: #292727;
+    .footerTop {
+        background-color: $color-rojo;
+        .contTitleButon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 35px;
+            padding-bottom: 35px;
+            h3 {
+                font-family: $font-title;
+                color: white;
+                text-transform: uppercase;
+                span {
+                    text-transform: capitalize;
+                    font-style: italic;
+                    font-size: 22px;
+                }
+            }
+            button {
+                color: $color-rojo;
+                border-color: #ffffff;
+                background-color: #ffffff;
+                font-size: 14px;
+                line-height: 60px;
+                font-weight: 700;
+                padding-left: 30px;
+                padding-right: 30px;
+                height: 40px;
+                border: none;
+                display: flex;
+                align-items: center;
+            }
+        }   
+    }
+    .contFooter {
+        .rowBottom {
+            display: flex;
+            justify-content: center;
+            padding: 72px 0 52px;
+            .columnas {
+                display: flex;
+                flex-direction: column;
+                gap: 18px;
+                h3 {
+                    color: white;
+                    text-align: initial;
+                    margin: 0;
+                    font-family: $font-title;
+                    font-size: 22px;
+                    font-weight: 400;
+                }
+                p {
+                    color: white;
+                    text-align: initial;
+                    text-transform: capitalize;
+                    font-size: 14px;
+                    line-height: 26px;
+                    margin-bottom: 0px;
+                }
+                ul {
+                    list-style: none;
+                    padding: 0;
+                    margin-bottom: 0px;
+                }
+                li {
+                    text-align: initial;
+                    margin-bottom: 8px;
+                }
+                a {
+                    text-decoration: none;
+                    color: white;
+                    font-size: 12px;
+                    line-height: 22px;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                }
+                img {
+                    display: block;
+                    width: 168px;
+                }
+                span {
+                    color: #808080;
+                    font-size: 12px;
+                    text-align: initial;
+                }
+                .contRedes {
+                    display: flex;
+                    gap: 10px;
+                    i {
+                        color: white;
+                        font-size: 24px;
+                    }
+                }
+                .contNewsletter {
+                    display: flex;
+                    button {
+                        background-color: #cc3f31;
+                        font-size: 12px;
+                        height: 49px;
+                        line-height: 49px;
+                        padding: 0 20px;
+                        color: #ffffff;
+                        border: none;
+                    }
+                    input {
+                        background-color: #1e1c1c;
+                        border-color: rgba(50,48,48,1);
+                        border-width: 1px;
+                        border-style: solid;
+                        color: #8b8989;
+                        font-size: 13px;
+                        line-height: 23px;
+                        font-weight: 400;
+                        padding-top: 13px;
+                        padding-bottom: 13px;
+                        padding-left: 13px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+    .footerTop {
+        .contTitleButon {
+            gap: 20px;
+        }
+    }
+    .contFooter {
+        .rowBottom {
+            row-gap: 18px;
+        }
+    }
+}
+
+@media screen and (max-width: 426px) {
+
+    .contFooter {
+        .rowBottom {
+            gap: 18px;
+        }
+    }
+}

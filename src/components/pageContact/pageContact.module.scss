@@ -1,0 +1,90 @@
+.contact {
+    padding: 100px 0;
+    .containerMap {
+        img {
+            width: 100%;
+        }
+    }
+
+    .containerContact {
+        text-align: left;
+        h3 {
+            color: #1f1d1d;
+            font-family: 'Playfair Display', sans-serif;
+            font-size: 30px;
+            line-height: 40px;
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+        p {
+            font-size: 14px;
+            line-height: 26px;
+            color: #818181;
+            font-weight: 400;
+        }
+        .formContainer {
+            form {
+                display: flex;
+                flex-direction: column;
+                input {
+                    background-color: rgba(255,255,255,1);
+                    border-color: rgba(238,236,236,1);
+                    border-width: 1px;
+                    border-style: solid;
+                    color: #b8b8b8;
+                    font-size: 14px;
+                    line-height: 24px;
+                    font-weight: 400;
+                    text-transform: none;
+                    padding-top: 17px;
+                    padding-right: 20px;
+                    padding-bottom: 17px;
+                    padding-left: 20px;
+                    margin-bottom: 12px;
+                }
+                textarea {
+                    background-color: rgba(255,255,255,1);
+                    border-color: rgba(238,236,236,1);
+                    border-width: 1px;
+                    border-style: solid;
+                    color: #b8b8b8;
+                    font-size: 14px;
+                    line-height: 24px;
+                    font-weight: 400;
+                    text-transform: none;
+                    padding-top: 17px;
+                    padding-right: 20px;
+                    padding-bottom: 17px;
+                    padding-left: 20px;
+                    margin-bottom: 12px;
+                }
+                button {
+                    color: #ffffff;
+                    border-color: #cc3f31;
+                    font-size: 14px;
+                    line-height: 60px;
+                    height: 60px;
+                    font-weight: 700;
+                    background-color: #cc3f31;
+                    border-radius: 0px;
+                    -moz-border-radius: 0px;
+                    -webkit-border-radius: 0px;
+                    letter-spacing: 2px;
+                    text-transform: uppercase;
+                    border-width: 1px;
+                    width: 160px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 968px) {
+    .contact {
+        padding: 0 10% 100px 10%;
+        .row {
+            display: flex;
+            gap: 30px;
+        }
+    }
+}
