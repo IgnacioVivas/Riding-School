@@ -6,6 +6,7 @@ $color-gris-sec: #c1c1c1;
 .container {
     padding: 100px 0 100px 0;
     .row {
+        cursor: default;
         h3 {
             font-family: $font-title;
             text-transform: uppercase;

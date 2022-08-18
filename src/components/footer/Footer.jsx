@@ -60,7 +60,7 @@ function Footer() {
             </ul>
           </Col>
           <Col xs={12} sm={6} lg={3} className={Classes.columnas}>
-            <h3>Redes Sociales</h3>
+            <h3>Social Neetworks</h3>
             <div className={Classes.contRedes}>
               <i className="ri-instagram-line"></i>
               <i className="ri-facebook-fill"></i>
